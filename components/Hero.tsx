@@ -171,19 +171,7 @@ export const Hero: React.FC = () => {
                 </button>
 
                 {/* Volume Controls */}
-                <div className="flex items-center gap-2 group/volume">
-                  <button onClick={toggleMute} className="text-white hover:text-brand-400">
-                    {isMuted || volume === 0 ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
-                  </button>
-                  <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    value={isMuted ? 0 : volume}
-                    onChange={handleVolumeChange}
-                    className="w-24 h-1.5 bg-slate-600 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3 [&::-webkit-slider-thumb]:h-3 [&::-webkit-slider-thumb]:bg-brand-500 [&::-webkit-slider-thumb]:rounded-full"
-                  />
-                </div>
+                {/* Volume Controls Removed as requested */}
 
                 {/* Progress Bar (Optional Visual Only as we removed seeking controls request? keeping it minimal) */}
                 <div className="flex-grow text-xs text-slate-400 text-right pr-2">
