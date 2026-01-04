@@ -106,21 +106,21 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative w-full pt-12 pb-24 lg:py-32 bg-slate-900 text-white overflow-hidden flex flex-col items-center justify-center min-h-[90vh]">
       {/* Background Image - Keep eager for LCP */}
-      <div className="absolute inset-0 z-0 opacity-10">
+      <div className="absolute inset-0 z-0">
         <img
-          src="https://picsum.photos/id/43/1920/1080"
-          alt="Background Texture"
+          src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/A_dark_moody_202601040534.webp?v=1767515712"
+          alt="Background texture - A very heavily stylized manicure background"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute inset-0 z-0 bg-slate-900/95"></div>
+      <div className="absolute inset-0 z-0 bg-slate-900/75"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl text-center flex flex-col items-center">
 
         {/* Badge - Updated to Yellow/Gold */}
         <div className="inline-flex items-center gap-1.5 text-yellow-400/90 text-[11px] font-medium mb-4 animate-fade-in-up text-left md:text-center h-auto leading-relaxed max-w-full">
           <AlertTriangle className="w-3 h-3 flex-shrink-0" />
-          <span>Curtida não paga boleto, mas uma agenda organizada sim.</span>
+          <span>Curtida não paga boleto, mas uma agenda lotada sim.</span>
         </div>
 
         {/* Headline */}

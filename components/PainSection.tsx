@@ -16,13 +16,13 @@ export const PainSection: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 relative">
-             <div className="absolute -inset-4 bg-slate-100 rounded-2xl transform -rotate-2 z-0"></div>
-             <img 
-               src="https://picsum.photos/id/64/800/800" 
-               alt="Manicure cansada olhando o celular" 
-               className="relative rounded-lg shadow-2xl z-10 w-full object-cover aspect-square md:aspect-auto md:h-[500px]"
-               loading="lazy"
-             />
+            <div className="absolute -inset-4 bg-slate-100 rounded-2xl transform -rotate-2 z-0"></div>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/A_candid_smartphone_202601040417.webp?v=1767511155"
+              alt="A candid smartphone - A angústia de ser uma excelente profissional com a agenda cheia de buracos"
+              className="relative rounded-lg shadow-2xl z-10 w-full object-cover aspect-square md:aspect-auto md:h-[500px]"
+              loading="lazy"
+            />
           </div>
 
           <div className="order-1 md:order-2 space-y-8">

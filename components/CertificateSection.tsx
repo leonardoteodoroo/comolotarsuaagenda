@@ -27,8 +27,8 @@ export const CertificateSection: React.FC = () => {
           <div className="lg:w-3/5 relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#b49e7c] to-[#8c733f] rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
             <img
-              src="https://www.cursomanicure.com/wp-content/uploads/2024/04/CERTIFICADO-CURSO-MANICURE-AGENDA-LOTADA-1.png"
-              alt="Certificado Manicure Agenda Lotada"
+              src="https://cdn.shopify.com/s/files/1/0668/4275/5223/files/A_sophisticated_manicure_202601040503.webp?v=1767513848"
+              alt="A sophisticated manicure - Certificado de Conclusão"
               className="relative rounded-lg shadow-2xl w-full transform transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
