@@ -223,8 +223,11 @@ export const TestimonialsSection: React.FC = () => {
         {/* Carousel Container */}
         <div
           className="flex overflow-x-auto gap-6 px-6 pb-4 pt-4 snap-x snap-mandatory hide-scrollbar md:grid md:grid-cols-3 md:gap-8 md:px-6 md:pb-0 md:overflow-visible justify-start md:justify-center"
-          onScroll={() => setHasScrolled(true)}
-          onTouchMove={() => setHasScrolled(true)}
+          onScroll={(e) => {
+            if (e.currentTarget.scrollLeft > 20) {
+              setHasScrolled(true);
+            }
+          }}
         >
           {testimonials.map((testimonial) => (
             <div

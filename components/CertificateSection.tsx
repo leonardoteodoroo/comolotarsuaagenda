@@ -7,7 +7,7 @@ export const CertificateSection: React.FC = () => {
     <section className="py-20 bg-[#070707] relative overflow-hidden">
       {/* Background Gradients similar to JSON style */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#15181F] via-[#070707] to-[#15181F] opacity-80"></div>
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <span className="text-[#b49e7c] font-bold tracking-widest uppercase text-sm mb-2 block">
@@ -22,13 +22,13 @@ export const CertificateSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-          
+
           {/* Certificate Image */}
           <div className="lg:w-3/5 relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#b49e7c] to-[#8c733f] rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
-            <img 
-              src="http://www.cursomanicure.com/wp-content/uploads/2024/04/CERTIFICADO-CURSO-MANICURE-AGENDA-LOTADA-1.png" 
-              alt="Certificado Manicure Agenda Lotada" 
+            <img
+              src="https://www.cursomanicure.com/wp-content/uploads/2024/04/CERTIFICADO-CURSO-MANICURE-AGENDA-LOTADA-1.png"
+              alt="Certificado Manicure Agenda Lotada"
               className="relative rounded-lg shadow-2xl w-full transform transition-transform duration-500 hover:scale-[1.02]"
               loading="lazy"
             />
@@ -37,13 +37,13 @@ export const CertificateSection: React.FC = () => {
           {/* Benefits */}
           <div className="lg:w-2/5 text-left space-y-8">
             <div className="bg-[#1D2029] p-6 rounded-2xl border border-[#8C733F]/30">
-               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                 <Award className="w-6 h-6 text-[#b49e7c]" />
-                 Diferencial de Mercado
-               </h3>
-               <p className="text-slate-400 text-sm leading-relaxed">
-                 Mostre para suas clientes que você é uma profissional capacitada pela Instrutora Master Faby Cardoso. Isso justifica seu preço e gera confiança imediata.
-               </p>
+              <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <Award className="w-6 h-6 text-[#b49e7c]" />
+                Diferencial de Mercado
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Mostre para suas clientes que você é uma profissional capacitada pela Instrutora Master Faby Cardoso. Isso justifica seu preço e gera confiança imediata.
+              </p>
             </div>
 
             <ul className="space-y-4">

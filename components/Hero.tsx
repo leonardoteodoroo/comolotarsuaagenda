@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from './Button';
-import { AlertTriangle, CheckCircle, Play, Pause, Volume2, VolumeX, Instagram } from 'lucide-react';
+import { AlertTriangle, CheckCircle, Play, Pause, Volume2, VolumeX, Instagram, ChevronDown } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -15,9 +15,19 @@ export const Hero: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(100);
   const [isMuted, setIsMuted] = useState(false);
+  const [showScrollHint, setShowScrollHint] = useState(true);
 
   const playerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollHint(window.scrollY < 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (showVideo && !playerRef.current) {
@@ -94,7 +104,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full py-20 lg:py-32 bg-slate-900 text-white overflow-hidden flex flex-col items-center justify-center min-h-[90vh]">
+    <section className="relative w-full pt-12 pb-24 lg:py-32 bg-slate-900 text-white overflow-hidden flex flex-col items-center justify-center min-h-[90vh]">
       {/* Background Image - Keep eager for LCP */}
       <div className="absolute inset-0 z-0 opacity-10">
         <img
@@ -212,6 +222,14 @@ export const Hero: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div
+        className={`absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center gap-2 transition-opacity duration-500 pointer-events-none z-20 ${showScrollHint ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <span className="text-[10px] uppercase tracking-widest text-slate-400 font-medium">Role para baixo</span>
+        <ChevronDown className="w-6 h-6 text-green-500 animate-bounce" />
       </div>
     </section>
   );
