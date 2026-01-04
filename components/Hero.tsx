@@ -118,9 +118,9 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl text-center flex flex-col items-center">
 
         {/* Badge - Updated to Yellow/Gold */}
-        <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/50 text-yellow-400 text-sm font-medium mb-8 animate-fade-in-up">
-          <AlertTriangle className="w-4 h-4" />
-          <span>Atenção Profissionais de Unhas</span>
+        <div className="inline-flex items-center gap-1.5 text-yellow-400/90 text-[11px] font-medium mb-4 animate-fade-in-up text-left md:text-center h-auto leading-relaxed max-w-full">
+          <AlertTriangle className="w-3 h-3 flex-shrink-0" />
+          <span>Curtida não paga boleto, mas uma agenda organizada sim.</span>
         </div>
 
         {/* Headline */}
